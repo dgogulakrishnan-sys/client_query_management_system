@@ -130,7 +130,7 @@ if st.session_state.get("authenticated"):
             st.session_state.clear()
             st.rerun()
     
-    st.subheader(f"Welcome, {st.session_state['username']} 👋")
+    st.subheader(f"Welcome, {st.session_state['username']} ")
     if st.session_state.get("role")=="Client":
         username=st.session_state.get("username")
         mobile_no=st.text_input("mobile_number",key="mobile_no")
